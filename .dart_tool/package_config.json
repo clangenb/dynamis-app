@@ -183,7 +183,7 @@
     },
     {
       "name": "flutter",
-      "rootUri": "file:///C:/code/dynamis-app/.fvm/flutter_sdk/packages/flutter",
+      "rootUri": "file:///C:/Users/clang/fvm/versions/stable/packages/flutter",
       "packageUri": "lib/",
       "languageVersion": "3.7"
     },
@@ -195,7 +195,7 @@
     },
     {
       "name": "flutter_test",
-      "rootUri": "file:///C:/code/dynamis-app/.fvm/flutter_sdk/packages/flutter_test",
+      "rootUri": "file:///C:/Users/clang/fvm/versions/stable/packages/flutter_test",
       "packageUri": "lib/",
       "languageVersion": "3.7"
     },
@@ -393,7 +393,7 @@
     },
     {
       "name": "sky_engine",
-      "rootUri": "file:///C:/code/dynamis-app/.fvm/flutter_sdk/bin/cache/pkg/sky_engine",
+      "rootUri": "file:///C:/Users/clang/fvm/versions/stable/bin/cache/pkg/sky_engine",
       "packageUri": "lib/",
       "languageVersion": "3.7"
     },
@@ -512,10 +512,10 @@
       "languageVersion": "3.7"
     }
   ],
-  "generated": "2025-05-15T07:23:04.461856Z",
+  "generated": "2025-05-15T07:38:45.058094Z",
   "generator": "pub",
   "generatorVersion": "3.7.2",
-  "flutterRoot": "file:///C:/code/dynamis-app/.fvm/flutter_sdk",
+  "flutterRoot": "file:///C:/Users/clang/fvm/versions/stable",
   "flutterVersion": "3.29.3",
   "pubCache": "file:///C:/Users/clang/AppData/Local/Pub/Cache"
 }

@@ -13,7 +13,7 @@ dev_dependencies:
   melos: ^7.0.0-dev.8
 
 melos:
-  sdkPath: ".fvm"
+  sdkPath: .fvm/flutter_sdk
 
   command:
     bootstrap:
@@ -77,32 +77,6 @@ melos:
       run: cd app && flutter gen-l10n
       description: "Generate translationsr"
 
-    # Note: This produces bad filepaths on windows. Need to run this script afterwards:
-    # `./scripts/replace_backslash_in_dart_files.sh packages/ew_polkadart`.
-    run-polkadart-generate:
-      run: >-
-        cd packages/ew_polkadart && dart run polkadart_cli:generate -v
-      description: "Generate encointer typdedefs with polkadart"
-
-    # Unit test Encointer Wallet with tag
-    unit-test-app-exclude-encointer-node-e2e:
-      run: >-
-        dart run melos exec --scope="encointer_wallet" -- \
-        flutter test --exclude-tags encointer-node-e2e
-      description: "Run unit tests excluding the `encointer-node-e2e` tag"
-
-    unit-test-app-with-encointer-node-e2e:
-      run: >-
-        dart run melos exec --scope="encointer_wallet" -- \
-        flutter test --tags encointer-node-e2e
-      description: "Run unit tests with the `encointer-node-e2e` tag"
-
-    unit-test-packages:
-      run: >-
-        dart run melos exec --ignore="encointer_wallet" -- \
-        flutter test
-      description: "Run unit tests with the `encointer-node-e2e` tag"
-
     # Run Encointer Wallet
     run-android:
       run: cd app && flutter run --flavor dev
@@ -111,11 +85,6 @@ melos:
     run-ios:
       run: cd app && flutter run
       description: "Run encointer_wallet on an iOS platform"
-
-    # Build apk for androids splitted per Application Binary Interface (abi)
-    build-apk-split:
-      run: cd app && flutter build apk --split-per-abi --flavor dev
-      description: "Build an APK file"
 
     build-appbundle-play:
       run: cd app && flutter build appbundle --release --flavor play
