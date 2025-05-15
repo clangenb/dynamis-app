@@ -2,3 +2,55 @@
 
 # FVM Version Cache
 .fvm/
+
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.buildlog/
+.history
+.svn/
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# Flutter/Dart/Pub related
+**/doc/api/
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+/build/
+
+# Ignore all toolchain files from all sub-packages.
+**/.dart_tool/
+**/.packages
+**/build/
+
+# Web related
+lib/generated_plugin_registrant.dart
+
+# Exceptions to above rules.
+!/packages/flutter_tools/test/data/dart_dependencies_test/**/.packages
+
+# webview lib
+**/dist
+**/node_modules/
+app/android/fastlane/metadata/android/en-US/images/phoneScreenshots/
+
+# source files
+/source
+
+# printscreens generated in tests
+/screenshots
+
+# Contains missing translations if any, otherwise it is an empty json: '{}'
+app/.untranslated-messages.txt
